@@ -7,19 +7,11 @@
 			<layout-app-main></layout-app-main>
       <div class="bottom">
         <p>
-<<<<<<< HEAD
-          <a href="https://github.com/itheima2017/vue-element-admin-itheima" target="_blank">
-            <svg-icon icon-class="github"></svg-icon>
-          </a>
-        </p>
-        <p>copyright<svg-icon icon-class="copyright"></svg-icon> 2018 iHRM 系统 版权所有</p>
-=======
           <a href="https://github.com/HackerMac/hd_Practice_vue" target="_blank">
             <svg-icon icon-class="github"></svg-icon>
           </a>
         </p>
         <p style="padding:10px">copyright<svg-icon icon-class="copyright"></svg-icon> 2021 UESTC-HD-iHRM 系统 版权所有</p>
->>>>>>> 增加员工管理模块 以及权限管理界面后续添加
       </div>
 		</div>
 	</div>

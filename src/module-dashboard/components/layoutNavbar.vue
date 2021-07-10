@@ -23,7 +23,7 @@
         </transition>
       </div>
       <!-- 使用文档 -->
-      <a href="http://itheimaadmin.itcast.cn/book/help" class="item" target="_blank">
+      <a href="https://github.com/HackerMac/hd_Practice_vue" class="item" target="_blank">
         <el-tooltip class="item" effect="dark" content="使用文档" placement="bottom"><i class="el-icon-question"></i></el-tooltip>
       </a>
       <!-- 错误 -->
@@ -50,7 +50,7 @@
               {{$t('navbar.dashboard')}}
             </el-dropdown-item>
           </router-link>
-          <a target='_blank' href="https://github.com/itheima2017/vue-element-admin-itheima">
+          <a target='_blank' href="https://github.com/HackerMac/hd_Practice_vue">
             <el-dropdown-item>
               {{$t('navbar.github')}}
             </el-dropdown-item>

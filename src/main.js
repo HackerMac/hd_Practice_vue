@@ -18,16 +18,10 @@ import './mock' // simulation data
 */
 import dashboard from '@/module-dashboard/' // 面板
 import demo from '@/module-demo/' // 面板
-<<<<<<< HEAD
-import saasClient from '@/module-saas-clients/'
-import departments from '@/module-departments/'
-// import employees from '@/module-employees/'
-=======
 import saasClient from '@/module-saas-clients/' // 企业管理
 import departments from '@/module-departments/' // 用户管理
 import employees from '@/module-employees/'   // 用户管理
->>>>>>> 增加员工管理模块 以及权限管理界面后续添加
-// import settings from '@/module-settings/'
+import settings from '@/module-settings/'
 
 import tools from './utils/common.js'
 Vue.prototype.$tools = tools
@@ -37,12 +31,8 @@ Vue.use(dashboard, store)
 Vue.use(demo, store)
 Vue.use(saasClient, store)
 Vue.use(departments, store)
-<<<<<<< HEAD
-// Vue.use(employees, store)
-=======
 Vue.use(employees, store)
->>>>>>> 增加员工管理模块 以及权限管理界面后续添加
-// Vue.use(settings, store)
+Vue.use(settings, store)
 
 /*
 * 注册 - 组件

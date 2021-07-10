@@ -1,10 +1,6 @@
 <template>
 <div class="app-breadcrumb">
-<<<<<<< HEAD
-  电子科技大学-华迪实习课程<span class="breadBtn">体验版</span>
-=======
   电子科技大学-华迪实习-云高校管理平台<span class="breadBtn">正式版</span>
->>>>>>> 增加员工管理模块 以及权限管理界面后续添加
 </div>
 </template>
 
