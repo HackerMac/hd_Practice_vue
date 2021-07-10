@@ -22,34 +22,36 @@
     </el-dialog>
 </template>
 
+</template>
+
 <script>
-import {list, saveOrUpdate, find, deleteById} from '@/api/base/dept'
+import {list,saveOrUpdate,find,deleteById} from '@/api/base/dept'
 export default {
-  data() {
-    return {
+  data(){
+    return{
       //添加部门的模型
-      parentId: '',
-      dialogFormVisible: false,
-      dept: {}
+      parentId : '',
+      dialogFormVisible : false,
+      dept : {}
     }
   },
 
   methods:{
    
-    saveDept() {
+    saveDept(){
       this.dept.pid = this.parentId
       saveOrUpdate(this.dept).then(res => {
 
         this.$message({
-          message: res.data.message,
-          type: res.data.success ? 'success' : 'error'
-        })
+          message : res.data.message,
+          type : res.data.success ?  'success' : 'error'
+        });
           //保存成功
-          if (res.data.success) {
+          if(res.data.success){
             location.reload();
           }
       })
-    }
+    },
 
   }
 }

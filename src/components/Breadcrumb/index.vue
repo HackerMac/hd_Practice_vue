@@ -1,6 +1,6 @@
 <template>
 <div class="app-breadcrumb">
-  电子科技大学-华迪实习-云高校管理平台<span class="breadBtn">正式版</span>
+  电子科技大学-华迪实习-人力资源管理系统<span class="breadBtn">正式版</span>
 </div>
 </template>
 

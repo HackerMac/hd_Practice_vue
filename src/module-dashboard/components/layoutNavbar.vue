@@ -200,8 +200,6 @@ export default {
     }
   }
 }
-.el-tooltip {
-}
 .el-breadcrumb__inner a {
   color: #fff;
 }

@@ -11,7 +11,7 @@
             <svg-icon icon-class="github"></svg-icon>
           </a>
         </p>
-        <p style="padding:10px">copyright<svg-icon icon-class="copyright"></svg-icon> 2021 UESTC-HD-iHRM 系统 版权所有</p>
+        <p style="padding:10px">copyright<svg-icon icon-class="copyright"></svg-icon> 2021 UESTC-HD-HRM系统 版权所有</p>
       </div>
 		</div>
 	</div>

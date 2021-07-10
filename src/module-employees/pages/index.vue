@@ -99,7 +99,7 @@ export default {
       counts: '',
       requestParameters:{
         page: 1,
-        size: 10
+        size: 10,
       }    
     }
   },
@@ -129,7 +129,7 @@ export default {
     },
     // 添加新员工
     handlAdd() {
-      this.$refs.addUser.dialogFormVisible = true
+      this.$refs.addUser.dialogFormVisible=true
     },
     // 删除
     handleDelete(item) {
@@ -140,32 +140,34 @@ export default {
       ).then(() => {
           remove({ id: item.id })
             .then(res => {
-              this.$message({message: res.data.message, type: res.data.success ? 'success' : 'error'})
+              this.$message({message:res.data.message,type:res.data.success?'success':'error'})
               if(res.data.success) {
-                this.doQuery()
+                this.doQuery();
               }
             })
         })
     },
     handleRole(item) {
+
+      
       this.$refs.addRole.toAssignPrem(item.id)
-      var req = {}
-      req.id = item.id
-      console.log(req.id)
+      var req = {};
+      req.id = item.id;
+      console.log(req.id);
       findRolesByUserId(req).then(res => {
         this.$refs.addRole.addCheckedRoles(res.data.data.map(v=>v.id));
-      })
+      });
     },
     /**转正代码 */
     handlPositive(id) {
       this.$refs.positive.dialogFormV(id)
     },
-    judgeFormOfEmployment(data) {
+    judgeFormOfEmployment(data){
       return data.formOfEmployment == 1 ? '正式' : '非正式';
     },
-    formatterDate(data) {
-      let date = data.timeOfEntry
-      return commonApi.dateFormat(date)
+    formatterDate(data){
+      let date = data.timeOfEntry; 
+      return commonApi.dateFormat(date);
     }
   },
   // 创建完毕状态

@@ -8,7 +8,7 @@
           </div>
           <div class="headInfoTip">
             <p class="firstChild">早安，HR 专员，祝你开心每一天！</p>
-            <p class="lastChild">HR 专员  |  UESTC-HD 高校人力资源中心-招聘专员</p>
+            <p class="lastChild">HR 专员  |  UESTC-HD-课程实习-人力资源中心-招聘专员</p>
           </div>
         </div>
         <div class="fr">
@@ -43,26 +43,13 @@
                 公告
               </div>
               <div class="contentItem">
-                <!-- <ul class="noticeList">
-                  <li v-for="item in filteredItems" :key="item.id">
-                    <router-link :to="{'path':'./noticeDetails'}">
-                      <div class="item">
-                        <img :src="item.addPersonHeaderImage" alt="">
-                        <div>
-                          <p><span class="col">{{item.addPerson}}</span> 发布了 {{item.bulletinTitle}}</p>
-                          <p>{{item.latestOperationTime}}</p>
-                        </div>
-                      </div>
-                    </router-link>
-                  </li>
-                </ul> -->
                 <ul class="noticeList">
                   <li>
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">朱继柳</span> 发布了 FGO互动讨论获奖名单公布</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -70,8 +57,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">朱继柳</span> 发布了 FGO互动讨论获奖名单公布</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -79,8 +66,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">MINGKU</span> 发布了 FGO互动讨论获奖名单公布</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -88,8 +75,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">Limit_ZH</span> 发布了 FGO互动讨论获奖名单公布</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -97,8 +84,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">Saber</span> 发布了 FGO互动讨论获奖名单公布</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -106,8 +93,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">Alteria</span> 发布了 FGO互动讨论获奖名单公布</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>

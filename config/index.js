@@ -9,20 +9,13 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '',
-    proxyTable: {   // 请求转发
-      //企业信息请求的远程服务
-      '/api/company': {
-        target: 'http://localhost:9001/company/',
+    proxyTable: {
+      //企业信息请求的远程服务 //Updated 将直接对后台问服务请求,改为请求Zuul网关
+      '/api': {
+        target: 'http://localhost:9091',
         changeOrigin: true,
         pathRewrite: {
-          '^/api/company': ''
-        }
-      },
-      '/api/sys': {
-        target: 'http://localhost:9003/sys/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api/sys': ''
+          '^/api': ''
         }
       }
     },

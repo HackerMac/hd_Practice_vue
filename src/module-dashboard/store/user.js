@@ -1,6 +1,6 @@
 import { login, logout, profile } from '@/api/base/frame'
 import { getToken, setToken, removeToken } from '@/utils/auth'
-
+import getters from '@/store/getters'
 const user = {
   state: {
     user: '',
@@ -57,9 +57,14 @@ const user = {
             password: userInfo.password
           }).then(response => {
             const data = response.data.data
-            commit('SET_TOKEN', data.token)
-            setToken(data.token)
-            resolve()
+            if(data != null){
+              commit('SET_TOKEN', data)
+              setToken(data)
+              resolve()
+            }else{
+              reject(error)
+            }
+            
         }).catch(error => {
           reject(error)
         })
@@ -76,27 +81,13 @@ const user = {
           commit('SET_AVATAR', data.avatar)
           commit('SET_INTRODUCTION', data.company)
           commit('SET_APPROVALS', data.approvals)
+          getters.userId = data.userId
           resolve(response)
         }).catch(error => {
           reject(error)
         })
       })
     },
-
-    // 第三方验证登录
-    // LoginByThirdparty({ commit, state }, code) {
-    //   return new Promise((resolve, reject) => {
-    //     commit('SET_CODE', code)
-    //     loginByThirdparty(state.status, state.email, state.code).then(response => {
-    //       commit('SET_TOKEN', response.data.token)
-    //       setToken(response.data.token)
-    //       resolve()
-    //     }).catch(error => {
-    //       reject(error)
-    //     })
-    //   })
-    // },
-
     // 登出
     LogOut({ commit, state }) {
       return new Promise((resolve, reject) => {

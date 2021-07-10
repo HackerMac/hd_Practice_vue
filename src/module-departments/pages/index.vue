@@ -97,61 +97,61 @@
 <!-- 引入组件 -->
 <script>
 import commonApi from '@/utils/common'
-import {list, saveOrUpdate, find, deleteById} from '@/api/base/dept'
+import {list,saveOrUpdate,find,deleteById} from '@/api/base/dept'
 import deptAdd from './../components/add'
 export default {
 
-  components: {deptAdd},
+  components : {deptAdd},
 
   data() {
     return {
-      deptAdd: 'deptAdd',
-      activeName: 'first', 
-      departData: {},
-      depts: []
+      deptAdd : 'deptAdd',
+      activeName : 'first', 
+      departData : {},
+      depts : [],
     }
   },
 
   methods: {
     //添加部门
-    handlAdd(parentId) {
-      this.$refs.addDept.parentId = parentId
-      this.$refs.addDept.dialogFormVisible = true
+    handlAdd(parentId){
+      this.$refs.addDept.parentId = parentId;
+      this.$refs.addDept.dialogFormVisible = true;
     },
 
-    handUpdate(id) {
+    handUpdate(id){
       //根据id查询部门
-      find({id: id}).then(res => {
+      find({id:id}).then(res =>{
         //将数据绑定到dept对象中
-        this.$refs.addDept.dept = res.data.data
+        this.$refs.addDept.dept = res.data.data;
             //显示弹出层
-        this.$refs.addDept.dialogFormVisible = true
+        this.$refs.addDept.dialogFormVisible = true;
       })
     },
  
-    handleDelete(id) {
+    handleDelete(id){
 
        this.$confirm('是否删除此条记录?', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {
-          deleteById({id: id}).then(res =>{
+          deleteById({id:id}).then(res =>{
 
             this.$message({
-              message: res.data.message,
-              type: res.data.success ?  'success' : 'error'
-            })
+              message : res.data.message,
+              type : res.data.success ?  'success' : 'error'
+            });
             //删除成功
-            if (res.data.success) {
+            if(res.data.success){
               location.reload();
             }  
-        });
-      })
+        }); 
+        })
     },
 
     //构造查询方法
-    getList() {
+    getList(){
       list().then(res => {
         this.departData = res.data.data
         //将普通的数据转化为父子结构
@@ -161,11 +161,10 @@ export default {
     }
   },
   created: function() {
-    this.getList()
-  }
+    this.getList();
+  },
 }
 </script>
-
 <style rel="stylesheet/scss" lang="scss">
 .el-dropdown {
   color: #000000

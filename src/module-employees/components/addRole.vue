@@ -1,7 +1,7 @@
 <template>
   <div class="add-form">
     <el-dialog title="分配角色" :visible.sync="roleFormVisible" style="height:300px">
-      <el-form  :model="formBase"  label-position="left" label-width="120px" style='margin-left:120px; width:500px;'>
+      <el-form  :model="formBase"  label-position="left" label-width="120px" style='margin-left: 80px; width: 600px;'>
           <el-checkbox-group 
             v-model="checkedRoles">
             <el-checkbox v-for="(item,index) in roles" :label="item.id" :key="index">{{item.name}}</el-checkbox>
