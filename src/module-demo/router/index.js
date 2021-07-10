@@ -25,7 +25,11 @@ export default [
         path: 'index',
         component: _import('demo/pages/index'),
         name: 'saas-clients-demos',
+<<<<<<< HEAD
         meta: {title: 'xxx业务模块', icon: 'component', noCache: true}
+=======
+        meta: {title: '高校业务汇总', icon: 'component', noCache: true}
+>>>>>>> 增加员工管理模块 以及权限管理界面后续添加
       }
     ]
   }
