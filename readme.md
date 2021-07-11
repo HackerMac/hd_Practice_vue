@@ -1,5 +1,3 @@
-# SAAS IRHM 系统
-
 ## 运行
 
 ### 1. 安装 nodejs
