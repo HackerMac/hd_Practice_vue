@@ -1,4 +1,4 @@
-##UESTC 华迪实习 小组项目前端
+## UESTC 华迪实习 小组项目前端
 
 ## 运行
 
@@ -9,7 +9,8 @@ https://nodejs.org/en/
 ### 2. 安装包依赖
 
 ```sh
-yarn
+npm install 
+#cnpm install
 ```
 
 ### 3. 配置 API 地址
@@ -47,3 +48,25 @@ module.exports = {
 ```sh
 npm start
 ```
+
+
+
+#### 其它
+
+##### 1. node 版本 导致的node-sass 不支持 
+
+![image-20210713124205320]($%7Bstatic%7D/image-20210713124205320.png)
+
+解决办法，移步这个[仓库](https://github.com/sass/node-sass), 找到node版本对应的node-sass, 并安装
+
+```js
+npm install node-sass@版本
+cnpm install node-sass@版本
+```
+
+
+
+##### 2. npm 导包过慢问题
+
+- npm配置国内源
+- 安装cnpm，并配置国内源

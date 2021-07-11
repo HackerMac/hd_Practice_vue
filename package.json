@@ -1,7 +1,7 @@
 {
-  "name": "saas-ihrm",
+  "name": "uestc_hd_hrm",
   "version": "1.0.0",
-  "description": "基于SaaS的智能人力资源管理系统",
+  "description": "UESTC-HD-HRM",
   "author": "ArvinYL <ArvinYL@foxmail.com>",
   "private": true,
   "scripts": {

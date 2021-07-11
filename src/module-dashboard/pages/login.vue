@@ -2,7 +2,10 @@
   <div class="login-container">
     <el-form class="login-form" autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left">
       <div class="title-container">
-        <h3 class="title"><img src="./../assets/login-logo.png"></h3>
+        <!-- <h3 class="title"><img src="./../assets/login-logo.png"></h3> -->
+        <h3><div style="font-size:35px; font-weight:lighter; margin-left:20px; padding-bottom:10px; color:white">UESTC-HD 后台登录系统</div></h3>
+        <!-- <h3 class="title"><img src="https://www.designevo.com/tw/"></h3> -->
+        <!-- a href="https://www.designevo.com/tw/" title="免費線上logo製作軟體" -->
       </div>
       <el-form-item prop="username">
         <span class="svg-container svg-container_login">
